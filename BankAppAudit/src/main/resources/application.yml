@@ -1,0 +1,15 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: bankApp-audit-microservice
+
+# Discovery Server Access
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8081/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 2221

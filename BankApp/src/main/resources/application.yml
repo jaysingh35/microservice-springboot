@@ -1,0 +1,23 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: bankApp-microservice
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect  
+
+# Discovery Server Access
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8081/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 2222
+  
